@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -6,8 +6,16 @@
     <title>ASGN5A</title>
   </head>
   <body>
-    <div id="root"></div>
     <canvas id="c" height="400" width="700"></canvas>
+    <div id="root"></div>
+    <script type="importmap">
+      {
+        "imports": {
+          "three": "https://threejs.org/build/three.module.js",
+          "three/addons/": "https://threejs.org/examples/jsm/"
+        }
+      }
+    </script>
     <script type="module" src="src/main.js"></script>
   </body>
 </html>
